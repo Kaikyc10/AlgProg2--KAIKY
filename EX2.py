@@ -3,24 +3,21 @@ import re #Módulo para expressões regulares (avançadas)
 os.system('cls')
 
 frase = input("Digite uma frase: ")
-contador = 0
 palavra = ""
 ultima= ""
 
-for i in range(0,len(frase),1):
-    if frase[i].isalnum():
-        contador = contador + 1
 
-for j in range(0,len(frase),1):
-    if frase[j].isalpha():
-        palavra = palavra + frase[j]
-    if not frase[j].isalpha():
+
+for i in range(0,len(frase),1):
+    if frase[i].isalpha():
+        palavra = palavra + frase[i]
+    if not frase[i].isalpha():
         break
 
-for k in range(len(frase) -1,-1,-1):
-    if frase[k].isalpha():
-        ultima = ultima + frase[k]
-    if not frase[k].isalpha():
+for j in range(len(frase) -1,-1,-1):
+    if frase[j].isalpha():
+        ultima = ultima + frase[j]
+    if not frase[j].isalpha():
         break
 
 
