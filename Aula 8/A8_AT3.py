@@ -1,5 +1,14 @@
 def criar_perfil(**dados):
 
+    """
+    A função cria um perfil conforme os dados fornecidos pelo usuário.
+
+    recebe como parâmetro:
+
+    - **dados: São os dados que o usuário irá informar. O parâmetro é do tipo **kwargs.
+    
+    """
+
     if not dados:
             print("Nenhum dado registrado!")
             return

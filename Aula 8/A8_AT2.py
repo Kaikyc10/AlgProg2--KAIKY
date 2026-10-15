@@ -1,4 +1,16 @@
 def liha_do_tempo(*eventos):
+
+    """
+    Realiza a organização dos eventos informados pelo usuário. A função recebe como parâmetro:
+
+    - *eventos: Quantidade indefinida de eventos informados pelo usuário. 
+    
+    O parâmetro é do tipo *args.
+    
+    """
+
+
+
     total = len(eventos)
 
     if not eventos:

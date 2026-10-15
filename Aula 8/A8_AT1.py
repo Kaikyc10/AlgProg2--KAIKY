@@ -1,5 +1,19 @@
 def analisar_turma(*notas, media_minima=6.0, **dados):
 
+    """
+    Analisa todos os dados fornecidos a respeito da turma.
+
+    A função recebe como parâmetro:
+
+    - *notas: quantidade indefinida de notas dos alunos. O parâmetro é do tipo *args;
+
+    - media_minima: Valor da média mínima para o aluno ser aprovado. O parâmetro é do tipo
+    double e recebe como valor padrão 6.0;
+
+    - **dados: Informações adicionais sobre a turma. O parâmetro é do tipo **kwargs.
+
+    """
+
     soma = sum(notas)
     media = soma/len(notas)
 

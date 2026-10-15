@@ -1,4 +1,17 @@
 def cadastrar_evento(nome, *participantes,  online=False, **informacoes):
+
+    """
+    A função cadastra um evento conforme os dados fornecidos pelo usuário.
+
+    Recebe como parâmetros:
+
+    - nome: Variável que leva o nome do evento fornecido pelo usuário;
+    - *participantes: Quantidade indefinida de participantes. Esse parâmetro é do tipo *args;
+    - online=False: Do tipo boolean, recebe o status do evento e leva como valor padrão True;
+    - **informacoes: Informações adicionais do evento. O parâmetro é do tipo **kwargs.
+    
+    """
+
     total = len(participantes)
 
     info_ordenada = sorted(informacoes.items())
